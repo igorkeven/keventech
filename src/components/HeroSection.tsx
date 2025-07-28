@@ -4,10 +4,10 @@ import heroTechBg from '@/assets/hero-tech-bg.jpg';
 
 const HeroSection = () => {
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Youtube, href: '#', label: 'YouTube' },
-    { icon: MessageCircle, href: '#', label: 'WhatsApp' },
+    { icon: Github, href: 'https://github.com/igorkeven', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/igor-keven/', label: 'LinkedIn' },
+    { icon: Youtube, href: 'https://www.youtube.com/igorkeven', label: 'YouTube' },
+    { icon: MessageCircle, href: 'https://wa.me/5513996496884', label: 'WhatsApp' },
   ];
 
   return (
