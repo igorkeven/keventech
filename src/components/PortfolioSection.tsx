@@ -4,6 +4,8 @@ import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 
 // 1. Importe a imagem do seu projeto que está na pasta assets
 import erpImage from '@/assets/erp.jpeg'; 
+import pitagorasImage from '@/assets/pitagoras.png';
+import primeCarImage from '@/assets/primecar.png';
 
 
 const PortfolioSection = () => {
@@ -28,7 +30,7 @@ const PortfolioSection = () => {
       githubUrl: '#',
       image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop',
       status: 'Lançado',
-      results: '10k+ downloads em 3 meses'
+      results: 'Melhora significativa na experiência do usuário'
     },
     {
       title: 'E-commerce B2B Avançado',
@@ -52,28 +54,28 @@ const PortfolioSection = () => {
       status: 'Produção',
       results: '99.9% de uptime'
     },
-    {
-      title: 'Dashboard Analytics Avançado',
-      category: 'Data Visualization',
-      description: 'Dashboard interativo com visualizações em tempo real e relatórios personalizáveis para tomada de decisão.',
-      technologies: ['React', 'D3.js', 'Python', 'InfluxDB'],
-      liveUrl: '#',
-      githubUrl: '#',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
-      status: 'Concluído',
-      results: '60% redução no tempo de análise'
-    },
-    {
-      title: 'Sistema de Automação IoT',
-      category: 'IoT Solution',
-      description: 'Plataforma de automação industrial com sensores IoT, monitoramento em tempo real e alertas inteligentes.',
-      technologies: ['Java', 'Spring Boot', 'MQTT', 'InfluxDB'],
-      liveUrl: '#',
-      githubUrl: '#',
-      image: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop',
-      status: 'Em Produção',
-      results: '30% redução nos custos operacionais'
-    }
+   {
+  title: 'Site de Revenda de Veículos - Prime Car',
+  category: 'E-commerce de Veículos',
+  description: 'Plataforma de e-commerce para uma revenda de veículos, com catálogo de estoque dinâmico, filtros de busca, simulação de financiamento e páginas de detalhes para cada automóvel.',
+  technologies: ['Next.js', 'React', 'Tailwind CSS', 'Prisma', 'PostgreSQL'],
+  liveUrl: 'https://primecarautomoveis.netlify.app/',
+ 
+  image: primeCarImage,
+  status: 'Concluído & Lançado',
+  results: 'Digitalização completa do estoque, gerando leads qualificados através de simulações de financiamento.'
+},
+  {
+  title: 'Landing Page Pitágoras Barbearia',
+  category: 'Website Institucional',
+  description: 'Landing page moderna e responsiva para uma barbearia, com foco em agendamentos. Inclui status de funcionamento dinâmico, links diretos para WhatsApp e um modal interativo de horários.',
+  technologies: ['React', 'Vite', 'Tailwind CSS', 'shadcn/ui', 'Lucide React'],
+  liveUrl: 'https://pitagorasbarbearia.netlify.app', 
+  githubUrl: 'https://github.com/igorkeven/pitagoras-barbearia-guaramirim', 
+  image: pitagorasImage,
+  status: 'Concluído & Lançado',
+  results: 'Presença online profissional que facilitou o agendamento de clientes.'
+}
   ];
 
   return (
