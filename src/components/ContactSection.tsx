@@ -311,6 +311,8 @@ const ContactSection = () => {
                     <a
                       key={index}
                       href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`p-3 rounded-lg border border-border hover:border-primary/50 bg-card/50 hover:bg-card transition-all duration-300 hover:scale-110 group ${social.color}`}
                       aria-label={social.label}
                     >
