@@ -6,6 +6,7 @@ import PortfolioSection from '@/components/PortfolioSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import { projects } from '@/data/projects';
 
 const Index = () => {
   return (
@@ -15,7 +16,7 @@ const Index = () => {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
-        <PortfolioSection />
+        <PortfolioSection projects={projects.slice(0, 6)} showHeader showViewAll />
         <TestimonialsSection />
         <ContactSection />
       </main>
