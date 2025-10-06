@@ -1,15 +1,16 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Download, Mail, Github, Linkedin, Youtube, MessageCircle } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaYoutube, FaWhatsapp } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 import heroTechBg from '@/assets/hero-tech-bg.jpg';
 
 const HeroSection = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/igorkeven', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/igor-keven/', label: 'LinkedIn' },
-    { icon: Youtube, href: 'https://www.youtube.com/igorkeven', label: 'YouTube' },
-    { icon: MessageCircle, href: 'https://wa.me/5513996496884', label: 'WhatsApp' },
-  ];
-
+  { Icon: FaGithub,   href: 'https://github.com/igorkeven',            label: 'GitHub',   hover: 'group-hover:text-[#181717]' },
+  { Icon: FaLinkedin, href: 'https://www.linkedin.com/in/igor-keven/', label: 'LinkedIn', hover: 'group-hover:text-[#0A66C2]' },
+  { Icon: FaYoutube,  href: 'https://www.youtube.com/igorkeven',       label: 'YouTube',  hover: 'group-hover:text-[#FF0000]' },
+  { Icon: FaWhatsapp, href: 'https://wa.me/5513996496884',             label: 'WhatsApp', hover: 'group-hover:text-[#25D366]' },
+];
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -66,7 +67,7 @@ const HeroSection = () => {
               className="btn-primary group"
               onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              <Mail className="mr-2 h-5 w-5" />
+              <MdEmail className="mr-2 h-5 w-5" />
               Solicitar Orçamento
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
@@ -90,7 +91,7 @@ const HeroSection = () => {
                 className="p-3 rounded-full border border-border hover:border-primary/50 bg-card/50 hover:bg-card transition-all duration-300 hover:scale-110 hover:shadow-glow-primary group"
                 aria-label={social.label}
               >
-                <social.icon className="h-6 w-6 text-muted-foreground group-hover:text-primary transition-colors" />
+                <social.Icon className="h-6 w-6 text-muted-foreground group-hover:text-primary transition-colors" />
               </a>
             ))}
           </div>

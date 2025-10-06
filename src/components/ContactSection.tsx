@@ -4,18 +4,10 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Send, 
-  Github, 
-  Linkedin, 
-  Youtube, 
-  MessageCircle,
-  Clock,
-  CheckCircle
-} from 'lucide-react';
+
+import { SiGithub, SiLinkedin, SiYoutube, SiWhatsapp, SiGmail } from 'react-icons/si';
+import { MdEmail } from 'react-icons/md';
+import { MapPin, Send, Clock, CheckCircle } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
@@ -91,13 +83,13 @@ const ContactSection = () => {
 
   const contactInfo = [
     {
-      icon: Mail,
+      icon: MdEmail,
       label: 'Email',
       value: 'igorkeven@hotmail.com',
       href: 'mailto:igorkeven@hotmail.com'
     },
     {
-      icon: MessageCircle,
+      icon: SiWhatsapp,
       label: 'WhatsApp',
       value: '+55 (13) 99649-6884',
       href: 'https://wa.me/5513996496884'
@@ -117,10 +109,10 @@ const ContactSection = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/igorkeven', label: 'GitHub', color: 'hover:text-primary' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/igor-keven/', label: 'LinkedIn', color: 'hover:text-blue-500' },
-    { icon: Youtube, href: 'https://www.youtube.com/igorkeven', label: 'YouTube', color: 'hover:text-red-500' },
-    { icon: MessageCircle, href: 'https://wa.me/5513996496884', label: 'WhatsApp', color: 'hover:text-green-500' },
+    { icon: SiGithub, href: 'https://github.com/igorkeven', label: 'GitHub', color: 'hover:text-primary' },
+    { icon: SiLinkedin, href: 'https://www.linkedin.com/in/igor-keven/', label: 'LinkedIn', color: 'hover:text-blue-500' },
+    { icon: SiYoutube, href: 'https://www.youtube.com/igorkeven', label: 'YouTube', color: 'hover:text-red-500' },
+    { icon: SiWhatsapp, href: 'https://wa.me/5513996496884', label: 'WhatsApp', color: 'hover:text-green-500' },
   ];
 
   return (
